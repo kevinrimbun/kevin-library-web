@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+
+}
+
+div .dropdown button {
+    font-weight: 600 ;
+}
+.search-box {
+    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    right: 25%;
+}
+
+.img-logo {
+    width: 40px;
+    height: 40px;
+}
+
+
+.text-logo {
+    font-weight: 600;
+    padding-top: 7%;    
+}
+
+/* Carousel */
+.gallery {
+    margin-top: 7%;
+}
+    
+.gallery-cell {
+    width: 600px;
+    height: 300px;
+    margin-right: 70px;
+    counter-increment: gallery-cell;
+}
+    
+.gallery-cell img {
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.gallery-cell img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-cell h2, p {
+    color: #FFFFFF;
+}
+
+/* Text List Book */
+.text-list h4{
+    padding-top: 5%;
+    padding-left: 5%;
+    font-weight: 510;
+}
+
+/* Text List Book Content */
+.list-book-content {
+    margin-bottom: 5%;
+}
+
+.card {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-text {
+    color: black;
+}

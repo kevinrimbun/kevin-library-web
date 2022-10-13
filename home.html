@@ -5,14 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./styling/style.css">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS Carousel -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 </head>
 <body>
     
     <section class="navbar">
-        
+        <nav class="container-fluid fixed-top">
+            <div class="btn-dropdown d-flex">
+                <div class="dropdown">
+                    <i class="bi bi-list"></i>
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Fiction</a></li>
+                        <li><a class="dropdown-item" href="#">Non Fiction</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="search form">
+                <input type="text" class="search-box" placeholder="     Search Box">
+            </div>
+                
+            <label class="logo d-flex">
+                <img class="img-logo" src="./assets/bookshelf.svg" alt="">
+                <div class="text-logo">Library</div>
+            </label>
+        </nav>
     </section>
+
+    <section class="carousel-content">
+        <div class="gallery js-flickity " data-flickity-options='{ "wrapAround": true }'>
+            <div class="gallery-cell ">
+                <img src="./assets/naruto1.png" alt="" srcset="">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h2>Naruto Dattebayo</h2>
+                    <p class="text-center">Masashi Kishimoto</p>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <img src="./assets/naruto1.png" alt="" srcset="">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h2>Naruto Dattebayo</h2>
+                    <p class="text-center">Masashi Kishimoto</p>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <img src="./assets/naruto1.png" alt="" srcset="">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h2 >Naruto Dattebayo</h2>
+                    <p class="text-center">Masashi Kishimoto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="list-book">
+        <div class="text-list">
+            <h4>List Book</h4>
+        </div>
+    </section>
+
+    <section class="list-book-content">
+        <div class="container-fluid pt-3 pb-5">
+            <div class="row">
+                <div class="d-flex col-lg-4 justify-content-center">
+
+                    <div class="card w-75 rounded-4" style="width: 50rem;">
+                        <img src="./assets/covernya.svg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="text-center fw-bolder">Dilan Bekasi</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex col-lg-4 justify-content-center">
+
+                    <div class="card w-75 rounded-4" style="width: 50rem;">
+                        <img src="./assets/covernya.svg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="text-center fw-bolder">Dilan Bekasi</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="d-flex col-lg-4 justify-content-center">
+
+                    <div class="card w-75 rounded-4" style="width: 50rem;">
+                        <img src="./assets/covernya.svg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="text-center fw-bolder">Dilan Bekasi</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Code JS -->
+    <script src="./js/script.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/81b15205d6.js" crossorigin="anonymous"></script>
+    <!-- Carousel JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 </body>
 </html>
