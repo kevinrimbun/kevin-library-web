@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styling/content-style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="dilan-page">
+
+        <div class="navbar">
+            <nav class="fixed-top ">
+                <div class="d-flex justify-content-between">
+
+                    <div class="arrow-nav">
+                        <a href="./home.html">
+                            <i class="bi bi-arrow-left-short rounded-circle px-1"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <ul class="menu">
+                            <li class="pe-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#home">Edit</a></li>
+                            <li><a href="#about">Delete</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <nav>
+        </div>
+
+    </section>
+    
+    
+    <section class="text-content">
+
+        <div class="cover-content d-flex justify-content-between">
+            <!-- <div class="text-content"></div> -->
+            <div class="category">
+                <h4>Manga</h4>
+                <h2>Uzumaki Boruto</h2>
+                <h5>30 Juni 2019</h5>
+            </div>
+            <div class="availability">
+                <h4>Available</h4>
+            </div>
+            <div class="img-content">
+                <img src="./assets/cover-dilan.svg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="para-content">
+        <div class="d-flex justify-content-between">
+
+            <div class="paratext-content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed iure eveniet dolor aut? Dolorum aperiam eius consequatur ducimus ea totam accusamus illum ipsam? Esse fuga cum reiciendis molestiae quod hic doloremque rem placeat. Fugit repellat dolorum, sit ducimus quas ipsam expedita libero impedit quia velit. Cumque perferendis doloribus saepe laboriosam enim accusantium provident corrupti odio officiis tenetur laborum at culpa tempore dicta quaerat mollitia animi voluptatibus unde, commodi sed. Eligendi nisi nesciunt explicabo! Dignissimos non sequi quibusdam quaerat voluptatum consectetur quo exercitationem rem. In odio fugiat facilis, nesciunt neque facere molestias quisquam voluptatum nam tempore, blanditiis totam minus. Corporis fugiat earum, odio blanditiis illo aut optio! Minima dolorem amet alias corrupti non voluptates distinctio officia dolores quae fugit suscipit accusantium repellat tenetur repellendus quod maiores reiciendis libero, ab voluptatem blanditiis nisi aperiam quia! Aliquid reprehenderit recusandae mollitia a. Quo animi obcaecati laudantium aperiam. Porro possimus tenetur debitis neque autem totam!</p>
+            </div>
+            <div class="btn-borrow">
+                <a href="#" class=""><button>Borrow</button></a>
+            </div>
+
+        </div>
+    </section>
+    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="row g-3 align-items-center kolom mt-2 ms-2 ">
+
+            <div class="col-3">
+              <label for="inputPassword6" class="col-form-label">URL Image</label>
+            </div>
+            <div class="col-8">
+              <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+
+        </div>
+        <div class="row g-3 align-items-center kolom mt-2 ms-2">
+            
+            <div class="col-3">
+              <label for="inputPassword6" class="col-form-label">Title</label>
+            </div>
+            <div class="col-8">
+              <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+
+        </div>
+        <div class="row g-3 align-items-center kolom mt-2 ms-2 mb-3">
+            
+            <div class="col-3">
+              <label for="inputPassword6" class="col-form-label">Description</label>
+            </div>
+            <div class="col-8">
+              <!-- <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline"> -->
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

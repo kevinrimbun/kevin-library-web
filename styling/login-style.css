@@ -31,9 +31,8 @@
 }
 
 .btn-login a {
-    background: #FFFFFF;
-    border: 1px solid #D0CCCC;
     border-radius: 5px;
-    color: rgba(208, 204, 204, 1);
+    border: 1px solid #E0E0E0;
     transition: 0.5s;
 }
+
