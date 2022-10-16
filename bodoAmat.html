@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lily</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styling/bodoAmat.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="imag/png" href="./assets/lily-transformed.png">
+</head>
+<body>
+    <section class="dilan-page">
+
+        <div class="navbar">
+            <nav class="fixed-top ">
+                <div class="d-flex justify-content-between">
+
+                    <div class="arrow-nav">
+                        <a href="./home.html">
+                            <i class="bi bi-arrow-left-short rounded-circle px-1"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <ul class="menu">
+                            <li class="pe-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#home">Edit</a></li>
+                            <li data-bs-toggle="modal" data-bs-target="#modalDelete"><a href="#about">Delete</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <nav>
+        </div>
+
+    </section>
+    
+    
+    <section class="text-content">
+
+        <div class="cover-content d-flex justify-content-between">
+            <!-- <div class="text-content"></div> -->
+            <div class="category">
+                <a href="">
+                    <button>Fiction</button>
+                </a>
+                <h2>Sebuah Seni Untuk Bersikap Bodo Amat</h2>
+                <h5>1963</h5>
+            </div>
+            <div class="availability">
+                <h4>Available</h4>
+            </div>
+            <div class="img-content">
+                <img src="./assets/buku-bodo-v.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="para-content">
+        <div class="d-flex justify-content-between">
+
+            <div class="paratext-content">
+                <p>The Amazing Spider-Man is an ongoing American comic book series featuring the Marvel Comics superhero Spider-Man as its main protagonist. Being in the mainstream continuity of the franchise, it began publication in 1963 as a bimonthly periodical (as Amazing Fantasy had been), quickly being increased to monthly, and was published continuously, with a brief interruption in 1995, until its second volume with a new numbering order in 1999. In 2003, the series reverted to the numbering order of the first volume. The title has occasionally been published biweekly, and was published three times a month from 2008 to 2010.
+
+                After DC Comics' relaunch of Action Comics and Detective Comics with new No. 1 issues in 2011, it had been the highest-numbered American comic still in circulation until it was cancelled. The title ended its 50-year run as a continuously published comic with the landmark issue #700 in December 2012. It was replaced by The Superior Spider-Man as part of the Marvel NOW! relaunch of Marvel's comic lines.[1]
+                    
+                Volume 3 of The Amazing Spider-Man was published in April 2014, following the conclusion of The Superior Spider-Man story arc. In late 2015, the series was relaunched with a 4th volume, following the 2015 Secret Wars event. The 5th volume began in 2018, as part of Marvel's Fresh Start series of comic relaunches. The 6th volume began in April 2022 to celebrate Spider-Man's 60th anniversary.</p>
+            </div>
+            <div class="btn-borrow">
+                <a data-bs-toggle="modal" data-bs-target="#modalBorrow" href="#" class=""><button>Borrow</button></a>
+            </div>
+
+        </div>
+    </section>
+    
+<!-- Modal -->
+
+<!-- Edit -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="row g-3 align-items-center kolom mt-2 ms-2 ">
+
+            <div class="col-3">
+              <label for="inputPassword6" class="col-form-label">URL Image</label>
+            </div>
+            <div class="col-8">
+              <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+
+        </div>
+        <div class="row g-3 align-items-center kolom mt-2 ms-2">
+            
+            <div class="col-3">
+              <label for="inputPassword6" class="col-form-label">Title</label>
+            </div>
+            <div class="col-8">
+              <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+
+        </div>
+        <div class="row g-3 align-items-center kolom mt-2 ms-2 mb-3">
+            
+            <div class="col-3">
+              <label for="inputPassword6" class="col-form-label">Description</label>
+            </div>
+            <div class="col-8">
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Delete -->
+  <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="./assets/checked.svg" alt="" srcset="">
+          <h4 class="pt-3">Data <b>Sebuah Seni Untuk Bersikap Bodo Amat
+        </b> berhasil dihapus !</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Borrow -->
+  
+    <div class="modal fade" id="modalBorrow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <i class="bi bi-arrow-through-heart-fill"></i>
+                <h4 class="pt-3">Buku <b>Sebuah Seni Untuk Bersikap Bodo Amat
+            </b> berhasil dipinjam !</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -3,7 +3,11 @@
 * {
     font-family: 'Montserrat', sans-serif !important;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
 }
 
 html {
@@ -14,11 +18,12 @@ nav {
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     padding: 10px;
-
+    margin-top: -1%;
 }
 
 div .dropdown button {
     font-weight: 600 ;
+    margin-left: -30%;
 }
 .search-box {
     border-radius: 20px;
@@ -36,35 +41,44 @@ div .dropdown button {
 
 
 .text-logo {
+    margin-left: 5%;
     font-weight: 600;
-    padding-top: 7%;    
+    padding-top: 15%;    
 }
 
 /* Carousel */
 .gallery {
-    margin-top: 7%;
+    margin-top: 1%;
 }
     
 .gallery-cell {
     width: 600px;
     height: 300px;
-    margin-right: 70px;
+    margin-right: 50px;
+    margin-left: 50px;
     counter-increment: gallery-cell;
 }
+
     
 .gallery-cell img {
     width: 600px;
     height: 300px;
     border-radius: 15px;
     transition: 0.5s;
+    filter: blur(2px);
 }
 
 .gallery-cell img:hover {
     transform: scale(1.1);
 }
 
-.gallery-cell h2, p {
-    color: #FFFFFF;
+.gallery-cell h4 {
+    color: white;
+    font-weight: 600;
+}
+
+.gallery-cell p {
+    color: white;
 }
 
 /* Text List Book */
@@ -76,7 +90,7 @@ div .dropdown button {
 
 /* Text List Book Content */
 .list-book-content {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 
 .card-content a {
@@ -99,3 +113,133 @@ div .dropdown button {
     color: black;
 }
 
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: all 0.5 ease;
+}
+.sidebar header img{
+    width: 40%;
+    height: 40%;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.sidebar header h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sidebar header .logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logout button{
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #DBDBDB;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+.sidebar ul a{
+    text-decoration: none;
+}
+.sidebar ul li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    
+}
+    
+.sidebar ul li:hover {
+    padding-left: 50px;
+}
+    
+#check {
+    display: none;
+}
+    
+label #btn {
+    /* position: absolute; */
+    cursor: pointer;
+}
+    
+label #btn {        
+    left: 0;
+    top: 0.5%;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    padding: 6px 2px;
+    transition: all 0.5s;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: none;
+    pointer-events: none;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+
+#check:checked ~ .gallery-cell{
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+
+/* Modal */
+.modal-footer button {
+    background-color: rgba(244, 207, 93, 1);
+    color: white;
+}
+
+.modal-body i {
+    font-size: 100px;
+    color: rgb(235, 52, 52);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .dropdown {
+        font-size: 15px;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 1190px) {
+    .gallery-cell {
+        width: 600px;
+        height: 300px;
+        margin-right: 25%;
+        margin-left: 25%;
+        counter-increment: gallery-cell;
+    }
+}
+
+@media (max-width: 768px) {
+    label .check i{
+        font-size: 10px;
+    }
+    .dropdown button {
+        font-size: 13px;
+        padding-left: 15%;
+    }
+    .card-content {
+        padding-top: 5%;
+    }
+}

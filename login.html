@@ -4,72 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lily</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./styling/login-style.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="imag/png" href="./assets/lily-transformed.png">
 </head>
 <body>
     <section class="login-register-page">
         <div class="container-fluid ps-md-0">
             <div class="row g-0">
 
-                <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-            
-            <div class="col-md-8 col-lg-6">
-                <div class="img-login">
-                    <!-- <img src="./assets/bookshelf.svg" alt="" srcset=""> -->
+                <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+                    <!-- Gambar Login URL on CSS -->
+                    <div class="bg-text">
+                        <div class="title-left-top">Book is a window to the world</div>
+                        <div class="title-left-bottom fixed-bottom">Photo by Mark Pan4ratte on Unsplash</div>
+                    </div>
                 </div>
-                <div class="login d-flex align-items-center py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 col-lg-8 mx-auto">
-                        <h3 class="login-heading mb-4">Login</h3>
-                        <p>Welcome Back, Please login to your account</p>
+            
+                <div class="col-md-8 col-lg-6">
+                    <div class="img-login">
+                        <img src="./assets/lily-transformed.png" alt="" srcset="">
+                    </div>
+                    <div class="login d-flex align-items-center py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-8 mx-auto">
+                            <h3 class="login-heading mb-4">Login</h3>
+                            <p>Welcome Back, Please login to your account</p>
           
-                        <!-- Sign In Form -->
-                        <form>
-                            <div class="box-form">
+                            <!-- Sign In Form -->
+                            <form action="./home.html">
+                                <div class="box-form">
 
-                                <div class="form-floating mb-2">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
-                                </div>
-                                <div class="form-floating password mb-2">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword">Password</label>
-                                </div>
+                                    <div class="form-floating mb-2">
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                        <label for="email">Email address</label>
+                                        <span class="error-message"></span>
+                                    </div>
+                                    <div class="form-floating password mb-2">
+                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                        <label for="password">Password</label>
+                                        <span class="error-message"></span>
+                                    </div>
                                 
-                            </div>
+                                </div>
           
-                            <div class="form-check mb-2 d-flex justify-content-between">
+                                <div class="form-check mb-2 d-flex justify-content-between">
                                 <div class="remember">
 
-                                    <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                                    <label class="form-check-label" for="rememberPasswordCheck">
-                                  Remember Me
-                                    </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                                        <label class="form-check-label" for="rememberPasswordCheck">
+                                      Remember Me
+                                        </label>
 
-                            </div>
-                                <div class="text-center">
-                                    <a class="small" href="#">Forgot password?</a>
                                 </div>
-                            </div>
+                                    <div class="text-center">
+                                        <a class="small" href="#">Forgot password?</a>
+                                    </div>
+                                </div>
           
-                            <div class="btn-login">
-                                <button class="btn" type="submit">Login</button>
-                                <a class="btn " href="./register.html" role="button">Register</a>
-                            </div>
+                                <div class="btn-login">
+                                    <button class="btn" type="submit">Login</button>
+                                    <a class="btn" href="./register.html" role="button">Register</a>
+                                </div>
           
-                        </form>
+                            </form>
+                        </div>
                     </div>
-                  </div>
+                    <div class="terms-login fixed-bottom">
+                        <div class="agree">By signing up, you agree to Book's</div>
+                        <div class="terms-text">Terms and Conditions <span>&</span> Privacy Policy</div>
+                    </div>
                 </div>
-              </div>
+
+
             </div>
         </div>
     </section>
