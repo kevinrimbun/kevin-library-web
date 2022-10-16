@@ -123,3 +123,59 @@ nav a {
     font-size: 100px;
     color: rgb(235, 52, 52);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dilan-page {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: -2px;
+        top: 0px;
+        background: url('../assets/komik-spiderman.png');
+        background-size: cover;
+    }
+    .img-content img {
+        width: 150px;
+        height: 200px;
+        border-radius: 15px;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+    .category {
+        margin-top: 25%;
+        margin-left: 3%;
+    }
+    
+    .category button {
+        border-radius: 50px;
+        background-color: rgba(251, 204, 56, 1);
+        color: white;
+        text-align: center;
+        cursor: auto;
+        padding: 5px 20px;
+        border-color: transparent;
+    }
+    .category h2 {
+        margin-top: 5%;
+        font-size: 20px;
+    }
+    .paratext-content {
+        margin-left: 3%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        padding-right: 10%;
+        text-align: justify;
+    }
+    .availability, .availability h4 {
+        margin-top: 22%;
+        margin-left: -5%;
+        font-weight: 600;
+        color: rgb(235, 52, 52);
+        /* font-size: 10px; */
+    }
+    .btn-borrow {
+        margin-top: -5%;
+        margin-right: 3%;
+    }
+}

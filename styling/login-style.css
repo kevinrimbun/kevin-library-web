@@ -53,6 +53,10 @@
     width: 95px;
     height: 95px;
 }
+.text-login-logo {
+    font-size: 30px;
+    font-weight: 600;
+}
 
 .btn-login a {
     border-radius: 5px;

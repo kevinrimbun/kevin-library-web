@@ -15,16 +15,13 @@
 }
 nav {
     margin-left: 3%;
-    /* display: flex; */
     align-items: center;
     padding-top: 25px;
     padding-right: 3%;
-    /* justify-content: space-between; */
 }
 
 nav li {
     display: inline-block;
-    /* margin-right: 3%; */
 }
 
 nav a {
@@ -77,14 +74,12 @@ nav a {
     background-color: rgba(251, 204, 56, 1);
     color: white;
     text-align: center;
-
     cursor: auto;
     padding: 5px 20px;
     border-color: transparent;
 }
 
 .category button h4 {
-    /* padding-top: 3%; */
     font-weight: 600;
     text-align: center;
     justify-content: center;
@@ -126,4 +121,60 @@ nav a {
 .modal-body i {
     font-size: 100px;
     color: rgba(153, 216, 21, 1);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dilan-page {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: -2px;
+        top: 0px;
+        background: url('../assets/buku-bodo-amat.png');
+        background-size: cover;
+    }
+    .img-content img {
+        width: 150px;
+        height: 200px;
+        border-radius: 15px;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+    .category {
+        margin-top: 25%;
+        margin-left: 3%;
+    }
+    
+    .category button {
+        border-radius: 50px;
+        background-color: rgba(251, 204, 56, 1);
+        color: white;
+        text-align: center;
+        cursor: auto;
+        padding: 5px 20px;
+        border-color: transparent;
+    }
+    .category h2 {
+        margin-top: 5%;
+        font-size: 20px;
+    }
+    .paratext-content {
+        margin-left: 3%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        padding-right: 10%;
+        text-align: justify;
+    }
+    .availability, .availability h4 {
+        margin-top: 23%;
+        margin-left: -15%;
+        font-weight: 600;
+        color: rgba(153, 216, 21, 1);
+    }
+    .btn-borrow {
+        margin-top: -5%;
+        margin-right: 3%;
+    }
 }

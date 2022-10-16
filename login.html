@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- Favicon -->
     <link rel="shortcut icon" type="imag/png" href="./assets/lily-transformed.png">
+    <!-- JS Login -->
+    <script src="./js/script.js"></script>
 </head>
-<body>
+<body class="login">
     <section class="login-register-page">
         <div class="container-fluid ps-md-0">
             <div class="row g-0">
@@ -30,6 +32,7 @@
                 <div class="col-md-8 col-lg-6">
                     <div class="img-login">
                         <img src="./assets/lily-transformed.png" alt="" srcset="">
+                        <div class="text-center text-login-logo">Lily</div>
                     </div>
                     <div class="login d-flex align-items-center py-5">
                         <div class="container">
@@ -39,17 +42,20 @@
                             <p>Welcome Back, Please login to your account</p>
           
                             <!-- Sign In Form -->
-                            <form action="./home.html">
+                            <form class="loginForm" name="loginForm" action="./home.html">
                                 <div class="box-form">
 
+                                    <!-- EMAIL -->
                                     <div class="form-floating mb-2">
-                                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control input" id="email" placeholder="niki@mail.com" name="email">
+                                        <label for="email" class="label">Email address</label>
                                         <span class="error-message"></span>
                                     </div>
+
+                                    <!-- PASSWORD -->
                                     <div class="form-floating password mb-2">
-                                        <input type="password" class="form-control" id="password" placeholder="Password">
-                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control passsword" id="password" placeholder="Password" name="password">
+                                        <label for="password" class="label">Password</label>
                                         <span class="error-message"></span>
                                     </div>
                                 
@@ -70,7 +76,8 @@
                                 </div>
           
                                 <div class="btn-login">
-                                    <button class="btn" type="submit">Login</button>
+                                    <button class="btn button" type="submit" onclick="validate()" value="Enter">Login</button>
+                                    <!-- <input type="button" value="Login" onclick="validate()"> -->
                                     <a class="btn" href="./register.html" role="button">Register</a>
                                 </div>
           
