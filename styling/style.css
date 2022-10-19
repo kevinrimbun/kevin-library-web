@@ -21,6 +21,7 @@ nav {
     margin-top: -1%;
 }
 
+/* Logo Search */
 #nav-bars {
     display: none;
 }
@@ -93,7 +94,7 @@ div .dropdown button {
     font-weight: 510;
 }
 
-
+/* Card Content */
 .card-content a {
     text-decoration: none;
 }

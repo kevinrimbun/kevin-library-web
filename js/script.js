@@ -4,7 +4,7 @@ function validate() {
     if (email === "niki@mail.com" && pass === "niki123") {
         alert("Welcome Niki");
         // localStorage.setItem("auth", 1)
-        window.location.href = "home.html"
+        // window.location.href = "ho.html"
     }
     else {
         alert("Please enter the valid Email & Password")
