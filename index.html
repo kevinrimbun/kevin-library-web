@@ -18,19 +18,17 @@
 
 </head>
 <body>
-    
+    <!-- Sidebar Menu -->
     <input type="checkbox" id="check">
     <div class="sidebar">
         <header>
             <img src="./assets/niki.svg" alt="" srcset="">
             <h5 class="text-center">Niki Zefanya</h5>
             <div class="logout">
-                <button>
                     <a href="./register.html" class="d-flex d-inline">
                         <i class="bi bi-box-arrow-right"></i>
                         <p class="ms-1">Logout</p>
                     </a>
-                </button>
             </div>
         </header>
         <ul>
@@ -81,10 +79,15 @@
     
                 <div class="search form">
                     <input type="text" class="search-box" placeholder="Search Box">
-
-                    <label id="nav-bars">
+                    <div class="box">
+                        <form name="search">
+                            <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                        </form>
                         <i class="bi bi-search"></i>
-                    </label>
+                    </div>
+                    <!-- <label id="nav-bars">
+                        <i class="bi bi-search"></i>
+                    </label> -->
                 </div>
                     
                 <label class="logo d-flex">
@@ -232,7 +235,7 @@
         </div>
       </div>
 
-          <!-- Success Add Book -->
+    <!-- Success Add Book -->
     <div class="modal fade" id="modalSuccessAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -242,7 +245,7 @@
             <div class="modal-body text-center">
               <img src="./assets/checked.svg" alt="" srcset="">
               <h4 class="pt-3">Data <b>Boruto: Naruto Next Generations
-            </b> berhasil di Edit !</h4>
+            </b> berhasil di Add !</h4>
             </div>
           </div>
         </div>

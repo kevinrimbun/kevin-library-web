@@ -2,9 +2,10 @@ function validate() {
     var email = document.forms["loginForm"]["email"].value;
     var pass = document.forms["loginForm"]["password"].value;
     if (email === "niki@mail.com" && pass === "niki123") {
+        if(pass === "niki123") {}
         alert("Welcome Niki");
         // localStorage.setItem("auth", 1)
-        // window.location.href = "ho.html"
+        window.location.replace("index.html")
     }
     else {
         alert("Please enter the valid Email & Password")
