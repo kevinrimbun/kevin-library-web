@@ -1,5 +1,5 @@
 # Lily the Online Library
-### Lily Perpustakaan Online adalah situs web perpustakaan online statis yang memungkinkan pengguna meminjam dan melihat sinopsis buku. Proyek ini dibuat untuk menyelesaikan tugas pembuatan website tentang perpustakaan online.
+### Lily the Online Library is a static online library website that allows users to borrow and view book synopsis. This project was created to complete the task of making a website about an online library.
 
 ## How To Use 
 1. Login to this URL https://lily-library.netlify.app/login.html with :
